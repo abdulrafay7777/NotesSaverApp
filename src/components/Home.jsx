@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { AddtoPaste, UpdateToPaste } from '../redux/PasteSlice';
+import { AddtoPaste, UpdateToPaste } from '../redux/pasteslice';
 import { useEffect } from 'react';
 
 
