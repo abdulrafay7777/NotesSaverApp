@@ -8,7 +8,7 @@ const initialState = {
     : []
 }
 
-export const pasteSlice = createSlice({
+export const pasteslice = createSlice({
   name: 'paste',
   initialState,
   reducers: {
@@ -57,6 +57,6 @@ export const pasteSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { AddtoPaste, UpdateToPaste, ResetAllPaste, RemoveFromPaste } = pasteSlice.actions;
+export const { AddtoPaste, UpdateToPaste, ResetAllPaste, RemoveFromPaste } = pasteslice.actions;
 
-export default pasteSlice.reducer
+export default pasteslice.reducer
