@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { RemoveFromPaste } from '../redux/PasteSlice';
+import { RemoveFromPaste } from '../redux/pasteslice';
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 
 const Paste = () => {
