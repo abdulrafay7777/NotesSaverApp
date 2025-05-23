@@ -1,0 +1,20 @@
+.home {
+  padding: 10px;
+}
+
+.home a {
+  margin-right: 30px;        
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.home a:hover,
+.home a.active {
+  text-decoration: underline;
+  color: #ffffff; 
+}
+
+
+.home a:last-child {
+  margin-right: 0;           
+}

@@ -1,0 +1,48 @@
+.title {
+  width: 100%;
+  padding: 20px;
+}
+
+.title input {
+  display: block;
+  padding: 10px 300px 10px 4px;    
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.txt {
+  padding: 10px 300px 10px 4px;    
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn {
+    padding-top: 10px;
+}
+
+.btn button {
+    
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 16px;
+  border: none;
+}
+
+.btn button:hover {
+  background: #45a049;
+}
+
+.copy {
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.copy img {
+    width: 20px;
+    padding-left: 500px;
+    
+}

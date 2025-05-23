@@ -1,18 +1,22 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import './ViewPaste.css'
 
 const ViewPaste = () => {
 
-  const {Id} = useParams();
+  const { id } = useParams();
   const allPastes = useSelector((state) => state.paste.pastes);
 
-  const paste = allPastes.filter((p) => p._Id === Id)[0];
+  const paste = allPastes.find((p) => p._id === id);
+
+  if (!paste) {
+    return <div className='view-title'>Paste not found or may have been deleted.</div>;
+  }
 
 
   return (
-    <div>
-      <input
+    <div className='view-title'>
+      <input 
         type="text"
         placeholder='Enter Title...'
         value={paste.title}
@@ -20,10 +24,10 @@ const ViewPaste = () => {
         onChange={(e) => setTitle(e.target.value)}
       />
 
-      
 
-      <div>
-        <textarea
+
+      <div >
+        <textarea className='txt-area' 
           value={paste.content}
           placeholder='Enter Notes Here...'
           disabled

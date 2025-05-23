@@ -29,7 +29,7 @@ export const pasteslice = createSlice({
       if (index !== -1) {
         state.pastes[index] = updatedPaste; // Step 3
         localStorage.setItem("pastes", JSON.stringify(state.pastes)); // Step 4
-        toast("Paste updated successfully");
+        toast.success("Paste updated successfully");
       }
 
       else {
@@ -37,11 +37,11 @@ export const pasteslice = createSlice({
       }
     },
 
-    ResetAllPaste: (state, action) => {
+    ResetAllPaste: (state) => {
       state.pastes = [];
 
       localStorage.removeItem("pastes")
-      toast("All pastes have been cleared");
+      toast.success("All pastes have been cleared");
     },
 
     RemoveFromPaste: (state, action) => {

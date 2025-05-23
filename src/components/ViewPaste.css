@@ -1,0 +1,24 @@
+.view-title {
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.view-title input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: not-allowed;
+}
+
+
+.txt-area {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: not-allowed;
+}
